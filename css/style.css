@@ -424,3 +424,12 @@ h3+.grid {
   font-size: 1.05rem;
   font-weight: 700;
 }
+
+
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
