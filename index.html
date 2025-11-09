@@ -32,7 +32,9 @@
       <p>
         Ready to take the next step toward your future career? The UMSI Career Development Resource Hub is your one-stop shop for trusted guidance, practical tools, and the latest information to help you thrive as a student and job-seeker. Whether you are just starting your exploration or getting ready to launch your career, you will find everything you need, organized for you.
       </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/GSjGeDYJ5Nk?si=qhxJPRTIT___x8hG" title="UMSI student summer internship experience at Rocket Companies" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-bleed">
+      <iframe src="https://www.youtube.com/embed/GSjGeDYJ5Nk?si=qhxJPRTIT___x8hG" title="UMSI student summer internship experience at Rocket Companies" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </section>
 
     <section>
@@ -80,8 +82,19 @@
         <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the home page": and then pasted in the client objectives & project requirements"
         UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
     </main>
-    <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916" rel="noopener noreferrer" target="_blank">UMSI Career Development Office </a></p>
-        </footer>
+<footer>
+  <p class="footer-legal">
+    © <span id="year"></span> University of Michigan School of Information ·
+    <a href="https://umich.instructure.com/courses/137916" target="_blank" rel="noopener noreferrer">
+      UMSI Career Development Office
+    </a>
+  </p>
+</footer>
+
+<script>
+  const y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>

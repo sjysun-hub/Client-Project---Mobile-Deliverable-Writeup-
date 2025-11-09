@@ -128,9 +128,18 @@
     </section>
 
   </main>
+<footer>
+  <p class="footer-legal">
+    © <span id="year"></span> University of Michigan School of Information ·
+    <a href="https://umich.instructure.com/courses/137916" target="_blank" rel="noopener noreferrer">
+      UMSI Career Development Office
+    </a>
+  </p>
+</footer>
 
-  <footer>
-    <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916" target="_blank" rel="noopener noreferrer">UMSI Career Development Office</a></p>
-  </footer>
+<script>
+  const y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
